@@ -49,7 +49,7 @@ fi
 # To get the latest minikube version:
 # curl https://api.github.com/repos/kubernetes/minikube/releases | jq -r .[].tag_name | sort | tail -n1
 if [ ! -f ~/cached-deps/minikube ] ; then
-    MINIKUBE_VERSION=v1.9.2
+    MINIKUBE_VERSION=v1.10.0
     curl -L -o minikube https://storage.googleapis.com/minikube/releases/${MINIKUBE_VERSION}/minikube-linux-amd64 && \
         chmod +x ./minikube && \
         mv ./minikube ~/cached-deps/minikube
